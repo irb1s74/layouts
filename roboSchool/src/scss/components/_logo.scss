@@ -3,4 +3,8 @@
   font-size: 30px;
   line-height: 160%;
   color: var(--light-color);
+
+  @include mobile {
+    font-size: 18px;
+  }
 }

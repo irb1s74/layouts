@@ -1,7 +1,16 @@
 .slider {
   margin-bottom: 75px;
+
+  &__slide {
+    width: 360px;
+    @include small-tablet {
+      width: 220px;
+    }
+  }
+
   &__nav {
     @include flex-all-sb;
+
     .swiper-scrollbar-drag {
       background-color: var(--dark-color);
     }
@@ -12,14 +21,20 @@
     height: 5px;
     background: rgba(20, 16, 36, 0.08);
     border-radius: 40px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__btns {
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__btn {
     @include bg-cover;
-
     width: 40px;
     height: 40px;
     &--prev {

@@ -5,6 +5,19 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
   }
 
   &__copyright {
@@ -12,6 +25,9 @@
     font-size: 16px;
     line-height: 160%;
     color: rgba(255, 255, 255, 0.7);
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__phone {
@@ -19,6 +35,10 @@
   }
 
   &__logo {
-    margin-bottom: 5px  ;
+    margin-bottom: 5px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 }

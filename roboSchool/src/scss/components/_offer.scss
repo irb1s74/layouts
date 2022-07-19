@@ -8,11 +8,19 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
   }
 
   &__left {
     grid-column: 5 span;
     padding-left: 60px;
+
+    @include tablet {
+      padding: 0;
+      justify-content: flex-start;
+      grid-column: 12 span;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -34,9 +42,18 @@
   &__right {
     grid-column: 7 span;
     padding-right: 60px;
+    @include tablet {
+      padding: 0;
+      justify-content: center;
+      grid-column: 1 / 13;
+    }
   }
 
   &__form {
     max-width: 500px;
+    @include tablet {
+      max-width: 80%;
+      margin: 0 auto;
+    }
   }
 }

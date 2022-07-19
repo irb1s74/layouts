@@ -18,10 +18,23 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
     margin-top: 60px;
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
     grid-column: 3 span;
+
+    @include small-desktop {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      text-align: center;
+      grid-column: 4 span;
+    }
   }
 
   &__digit {

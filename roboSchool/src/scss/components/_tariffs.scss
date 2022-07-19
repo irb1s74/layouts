@@ -3,7 +3,16 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+    @include tablet {
+      gap: 20px;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
+
   &__item {
     padding: 40px;
     border: 1px solid rgba(20, 16, 36, 0.2);
@@ -13,6 +22,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include tablet {
+      grid-column: 2 / 8;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
 
     &--current {
       background-color: var(--dark-color);
@@ -25,8 +42,11 @@
       .tariffs__price {
         color: var(--light-color);
       }
-      .tariffs__descr{
+      .tariffs__descr {
         color: var(--light-color);
+      }
+      @include small-desktop {
+        transform: scale(1);
       }
     }
   }
@@ -65,6 +85,14 @@
     line-height: 160%;
     color: var(--dark-color);
     margin-bottom: 20px;
+
+    @include small-desktop {
+      font-size: 40px;
+    }
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
   &__descr {
     margin: 0;

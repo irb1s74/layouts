@@ -1,8 +1,9 @@
+import { auto } from '@popperjs/core';
 import Swiper, { Navigation, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Scrollbar]);
 const el = document.querySelector('.slider')
 const swiper = new Swiper(el, {
-  slidesPerView: 4,
+  slidesPerView: auto,
   spaceBetween: 40,
   scrollbar: {
     el: '.slider__scrollbar',

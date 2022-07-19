@@ -1,15 +1,26 @@
 .hero {
-  min-height: 1080;
   padding-top: 165px;
   background-color: var(--dark-color);
 
   &__container {
-    @include flex;
+    // @include flex;
   }
 
   &__content {
-    max-width: 516px;
-    padding-top: 180px;
+    // max-width: 516px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 54px);
+    grid-column-gap: 40px;
+
+    @include tablet {
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -20,6 +31,14 @@
     color: var(--light-color);
     text-transform: uppercase;
     margin-bottom: 50px;
+    grid-column: 1 / 7;
+    grid-row: 2 / 2;
+
+    @include mobile {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
     &-text {
       display: block;
       max-width: 90%;
@@ -27,11 +46,61 @@
       font-size: 20px;
       line-height: 160%;
       text-transform: initial;
+      grid-column: 1 / 5;
+      grid-row: 3 / 3;
+
+      @include mobile {
+        max-width: 100%;
+        grid-row: 4 / 4;
+        font-size: 16px;
+      }
     }
   }
 
+  &__link {
+    min-width: 260px;
+    grid-column: 3 span;
+    grid-row: 3 / 3;
+
+    @include mobile {
+      min-width: 100%;
+      grid-column: 4 span;
+      grid-row: 4/4;
+    }
+  }
   &__image {
     margin-left: 21px;
-    transform: translate(160px,4px);
+    transform: translateX(160px) translateY(1px);
+    grid-column: 6 / 12;
+    grid-row: 1 / 6;
+    width: clamp(273px, 100%, 783px);
+
+    img {
+      max-height: 917px;
+      height: 100%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      transform: translateX(0px) translateY(0px);
+      margin-left: 0;
+      display: initial;
+      max-width: 100%;
+      max-height: 320px;
+      grid-row: 3 / 4;
+      grid-column: 4 span;
+      img {
+        object-position: 0 10px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include tablet {
+    padding-bottom: 200px;
+    min-height: auto;
   }
 }
