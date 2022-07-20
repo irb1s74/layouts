@@ -1,0 +1,32 @@
+.tabs {
+  &__nav {
+    max-width: 75%;
+    @include flex-all-sb;
+    &-item {
+
+    }
+
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--dark-color);
+
+      &--active{
+        color: var(--accent-color);
+      }
+      &:focus{
+        color: var(--accent-color);
+        background-color: initial;
+      }
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__panel {
+
+  }
+}
