@@ -2,8 +2,11 @@
   &__nav {
     max-width: 75%;
     @include flex-all-sb;
-    &-item {
 
+    &-item {
+      @include mobile {
+        margin-bottom: 10px;
+      }
     }
 
     &-btn {
@@ -12,14 +15,22 @@
       line-height: 160%;
       color: var(--dark-color);
 
-      &--active{
+      &--active {
         color: var(--accent-color);
       }
-      &:focus{
+
+      &:focus {
         color: var(--accent-color);
         background-color: initial;
       }
     }
+
+    @include mobile {
+      flex-direction: column;
+      max-width: 100%;
+      align-items: flex-start;
+    }
+
   }
 
   &__content {
