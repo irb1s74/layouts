@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--light-color);
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+
+  &__logo {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .nav {
+    padding: 0 45px 0 45px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__item {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  &__actions {
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      max-width: 159px;
+      width: 100%;
+      border-left: 1px solid;
+      font-size: 16px;
+      font-weight: 700;
+
+      &-start {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+}

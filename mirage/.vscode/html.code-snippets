@@ -1,0 +1,147 @@
+{
+    "svguse": {
+      "prefix": "g-use",
+      "body": [
+        "<svg className=\"\">",
+        "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+        "</svg>"
+      ],
+      "description": "Snippet for use svg sprites"
+    },
+    "burger": {
+      "prefix": "g-burger",
+      "body": [
+        "<button className=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+        "  <span className=\"burger__line\"></span>",
+        "</button>"
+      ],
+      "description": "Snippet for burger btn"
+    },
+    "checkbox": {
+      "prefix": "g-checkbox",
+      "body": [
+        "<label className=\"custom-checkbox\">",
+        "  <input type=\"checkbox\" className=\"custom-checkbox__field\">",
+        "  <span className=\"custom-checkbox__content\">$1</span>",
+        "</label>"
+      ],
+      "description": "Snippet for custom checkbox"
+    },
+    "navigation": {
+      "prefix": "g-nav",
+      "body": [
+        "<nav className=\"nav\" title=\"$1\">",
+        "  <ul className=\"list-reset nav__list\">",
+        "    <li className=\"nav__item\"><a href=\"#\" className=\"nav__link\"></a></li>",
+        "    <li className=\"nav__item\"><a href=\"#\" className=\"nav__link\"></a></li>",
+        "    <li className=\"nav__item\"><a href=\"#\" className=\"nav__link\"></a></li>",
+        "  </ul>",
+        "</nav>"
+      ],
+      "description": "Snippet for navigation"
+    },
+    "social": {
+      "prefix": "g-social",
+      "body": [
+        "<ul className=\"social\" title=\"$1\">",
+        "  <li className=\"social__item\"><a href=\"#\" target=\"_blank\" className=\"social__link social__link--fb\" aria-label=\"Наша страничка в Фейсбуке\"></a></li>",
+        "  <li className=\"social__item\"><a href=\"#\" target=\"_blank\" className=\"social__link social__link--vk\" aria-label=\"Наша страничка во Вконтакте\"></a></li>",
+        "  <li className=\"social__item\"><a href=\"#\" target=\"_blank\" className=\"social__link social__link--tw\" aria-label=\"Наша страничка в Твиттере\"></a></li>",
+        "</ul>"
+      ],
+      "description": "Snippet for social links"
+    },
+    "basicform": {
+      "prefix": "g-form",
+      "body": [
+        "<form action=\"#\" className=\"form\">",
+        "  <label className=\"form__label\">",
+        "    <input type=\"text\" name=\"Имя\" className=\"input-reset form__input\" placeholder=\"Имя\">",
+        "  </label>",
+        "  <button className=\"btn-reset form__btn\">Отправить</button>",
+        "</form>"
+      ],
+      "description": "Snippet for basic form"
+    },
+    "basicswiper": {
+      "prefix": "g-swiper",
+      "body": [
+        "<div className=\"swiper $1\">",
+        "  <div className=\"swiper-wrapper\">",
+        "     <div className=\"swiper-slide\">",
+        "     </div>",
+        "  </div>",
+        "</div>"
+      ],
+      "description": "Snippet for basic swiper structure"
+    },
+    "graph modal Btn": {
+      "prefix": "g-graph-btn",
+      "body": [
+        "<button className=\"btn-reset $1\" data-graph-path=\"$2\">$3</button>"
+      ],
+      "description": "Snippet for graph-modal btn"
+    },
+    "graph modal Structure": {
+      "prefix": "g-graph-modal",
+      "body": [
+        "<div className=\"graph-modal\">",
+        "  <div className=\"graph-modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
+        "    <button className=\"btn-reset js-modal-close graph-modal__close\" aria-label=\"Закрыть модальное окно\"></button>",
+        "    <div className=\"graph-modal__content\">$2</div>",
+        "  </div>",
+        "</div>"
+      ],
+      "description": "Snippet for graph-modal basic structure"
+    },
+    "picture": {
+      "prefix": "g-picture",
+      "body": [
+        "<picture>",
+        "  <source srcset=\"$1.avif\" type=\"image/avif\">",
+        "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+        "  <img loading=\"lazy\" src=\"$1.$2\" className=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+        "</picture>"
+      ],
+      "description": "Snippet for basic logo structure"
+    },
+    "svgimg": {
+
+      "prefix": "g-svgimg",
+      "body": [
+        "<img loading=\"lazy\" src=\"$1.$2\" className=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">"
+      ],
+      "description": "Snippet for simple html svg images"
+    },
+    "tooltip": {
+    "prefix": "g-tooltip",
+      "body": [
+        "<span className=\"tooltip\">",
+        "  <button className=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
+        "  <span className=\"tooltip__txt\" role=\"tooltip\" id=\"$1\">",
+        "    <span className=\"visually-hidden\">Тултип: </span>",
+        "    $3",
+        "  </span>",
+        "</span>"
+      ],
+      "description": "Snippet for tooltip"
+    },
+    "tabs html sctructure": {
+      "prefix": "g-tabs",
+      "body": [
+        "<div className=\"tabs\" data-tabs=\"$1\">",
+        "  <ul className=\"tabs__nav\">",
+        "    <li className=\"tabs__nav-item\"><button className=\"tabs__nav-btn\" type=\"button\">$2</button></li>",
+        "    <li className=\"tabs__nav-item\"><button className=\"tabs__nav-btn\" type=\"button\">$3</button></li>",
+        "    <li className=\"tabs__nav-item\"><button className=\"tabs__nav-btn\" type=\"button\">$4</button></li>",
+        "  </ul>",
+        "  <div className=\"tabs__content\">",
+        "    <div className=\"tabs__panel\">$5</div>",
+        "    <div className=\"tabs__panel\">$6</div>",
+        "    <div className=\"tabs__panel\">$7</div>",
+        "  </div>",
+        "</div>"
+      ],
+      "description": "Snippet for basic tabs structure"
+    }
+  }
