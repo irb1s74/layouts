@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/layouts/static/css/main.9ede3f48.css",
+    "main.js": "/layouts/static/js/main.797851ed.js",
+    "static/media/offer-img.png": "/layouts/static/media/offer-img.9e629536ef8ff25db5c1.png",
+    "static/media/InterBold.woff2": "/layouts/static/media/InterBold.daa3559eb503635b8237.woff2",
+    "static/media/InterRegular.woff2": "/layouts/static/media/InterRegular.d47e0ac97e3e2594424c.woff2",
+    "static/media/RobotoBold.woff2": "/layouts/static/media/RobotoBold.6756f889091596cd9911.woff2",
+    "static/media/RobotoRegular.woff2": "/layouts/static/media/RobotoRegular.7e6ed467acf79dfb5760.woff2",
+    "static/media/lib-1.svg": "/layouts/static/media/lib-1.12fe923971fed8b210e609918e54c4cb.svg",
+    "static/media/lib-5.svg": "/layouts/static/media/lib-5.c3507a2acad39d360984dd7617879576.svg",
+    "static/media/item-1.png": "/layouts/static/media/item-1.0c2e2b87a61e6ae5ddd6.png",
+    "static/media/item-3.png": "/layouts/static/media/item-3.961aae3edb0b7cf72aee.png",
+    "static/media/lib-4.svg": "/layouts/static/media/lib-4.48979f6bea9209ac721095a1fe64c665.svg",
+    "static/media/lib-2.svg": "/layouts/static/media/lib-2.f459b3a9409ff3198f633ce5cf821c63.svg",
+    "static/media/lib-6.svg": "/layouts/static/media/lib-6.596cdde51e109048727d358e47659a98.svg",
+    "static/media/lib-3.svg": "/layouts/static/media/lib-3.b23204648380bbfc5d103e788f2f2635.svg",
+    "static/media/item-2.png": "/layouts/static/media/item-2.894d801cadc7041a7723.png",
+    "static/media/univer-logo.svg": "/layouts/static/media/univer-logo.8e76cffe35d5bf09501cbdfe71ed60d2.svg",
+    "static/media/logo.svg": "/layouts/static/media/logo.0a6168ddd02a4f15eb5958cd6ee0cbf2.svg",
+    "static/media/message-frame.svg": "/layouts/static/media/message-frame.9cc11251aa6fc803b4f0d4200abfd9ac.svg",
+    "static/media/footer-pic.svg": "/layouts/static/media/footer-pic.510a463312710421687d4e5dffc663c6.svg",
+    "index.html": "/layouts/index.html",
+    "main.9ede3f48.css.map": "/layouts/static/css/main.9ede3f48.css.map",
+    "main.797851ed.js.map": "/layouts/static/js/main.797851ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ede3f48.css",
+    "static/js/main.797851ed.js"
+  ]
+}
